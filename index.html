@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QpeqIT — Managed IT Solutions | Qatar</title>
+  <meta name="description" content="Qatar's trusted Managed IT Service Provider. Microsoft 365, Azure, cybersecurity, networking, and full IT support for SMEs in Doha." />
+  <link rel="icon" type="image/png" href="assets/logot_1.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logot_1.png" alt="QpeqIT Logo" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#microsoft">Microsoft</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">Get a Free Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <section id="home" class="hero-section">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero">
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Managed IT Services · Qatar
+      </div>
+      <h1>
+        IT That Works.<br />
+        <span class="gradient-text">So You Don't Have To.</span>
+      </h1>
+      <p class="hero-sub">
+        QpeqIT delivers enterprise-grade Microsoft solutions, cybersecurity, and
+        full managed IT support tailored for Qatar's growing SMEs — so you can
+        focus on your business, not your technology.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+        <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="trust-logo" />
+        </div>
+        <div class="trust-divider"></div>
+        <span class="trust-text">Microsoft 365 · Azure · Teams · SharePoint</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="device-mockup">
+        <div class="device-screen">
+          <div class="screen-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <div class="screen-body">
+            <div class="stat-row">
+              <div class="stat-card">
+                <div class="stat-icon-wrap blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+                <div><div class="stat-label">System Health</div><div class="stat-val green-text">99.9% Uptime</div></div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon-wrap cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div>
+                <div><div class="stat-label">Security Status</div><div class="stat-val cyan-text">Protected</div></div>
+              </div>
+            </div>
+            <div class="chart-area">
+              <div class="chart-label">Monthly Performance</div>
+              <div class="chart-bars">
+                <div class="bar" style="--h:60%"></div>
+                <div class="bar" style="--h:80%"></div>
+                <div class="bar" style="--h:55%"></div>
+                <div class="bar" style="--h:90%"></div>
+                <div class="bar active" style="--h:75%"></div>
+                <div class="bar" style="--h:85%"></div>
+                <div class="bar" style="--h:95%"></div>
+              </div>
+            </div>
+            <div class="alert-row">
+              <div class="alert-badge success">✓ Backup completed — 2:00 AM</div>
+              <div class="alert-badge info">↑ Windows updates deployed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+    </div><!-- end .hero -->
+  </section>
+
+  <!-- ─── STATS ─────────────────────────────────────────────── -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="99.9" data-suffix="%">0%</div>
+          <div class="stat-desc">Uptime Guaranteed</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="2" data-suffix="hr">0hr</div>
+          <div class="stat-desc">Priority Response SLA</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="50" data-suffix="+">0+</div>
+          <div class="stat-desc">IT Services Offered</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+          <div class="stat-desc">Qatar-Based Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ──────────────────────────────────────────── -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What We Do</div>
+        <h2>Everything Your Business <span class="gradient-text">Needs to Run</span></h2>
+        <p>From your first email account to a full enterprise network — QpeqIT handles it all, so your team stays focused.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3>Microsoft 365 & Cloud</h3>
+          <p>Full M365 setup: email, Teams, SharePoint, OneDrive, and Azure AD. Migration, licensing, and ongoing admin included.</p>
+          <ul class="service-list">
+            <li>Email domain setup & migration</li>
+            <li>Teams & SharePoint configuration</li>
+            <li>MFA & security baseline</li>
+            <li>License management</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+          </div>
+          <h3>Managed IT Support</h3>
+          <p>Proactive monitoring, remote helpdesk, and on-site visits — we keep your systems running so you never have to worry.</p>
+          <ul class="service-list">
+            <li>Remote & on-site support</li>
+            <li>Patch & update management</li>
+            <li>Monthly health reports</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>Multi-layered protection including endpoint security, firewall management, email security, and Qatar PDPL compliance guidance.</p>
+          <ul class="service-list">
+            <li>Antivirus / EDR deployment</li>
+            <li>Firewall configuration</li>
+            <li>Security audits & reports</li>
+            <li>Staff awareness training</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+          </div>
+          <h3>Network Infrastructure</h3>
+          <p>Professional network design, structured cabling, managed switches, WiFi access points, and VPN configuration for your office.</p>
+          <ul class="service-list">
+            <li>Router & switch configuration</li>
+            <li>WiFi access point setup</li>
+            <li>Structured cabling</li>
+            <li>VPN (site-to-site & remote)</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+          </div>
+          <h3>Backup & Disaster Recovery</h3>
+          <p>Automated nightly backups with cloud redundancy. We test restores regularly so you're protected when it matters most.</p>
+          <ul class="service-list">
+            <li>Automated daily backups</li>
+            <li>Cloud + on-prem redundancy</li>
+            <li>Quarterly restore testing</li>
+            <li>3-2-1 backup strategy</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-purple">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.069A1 1 0 0121 8.87v6.26a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>CCTV & Physical Security</h3>
+          <p>IP camera systems, NVR setup, and remote viewing — comprehensive physical security integrated with your IT infrastructure.</p>
+          <ul class="service-list">
+            <li>IP camera installation</li>
+            <li>NVR / DVR configuration</li>
+            <li>Remote viewing setup</li>
+            <li>Access control systems</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>On-Premises Setup</h3>
+          <p>Complete workstation, server, and domain setup. We handle hardware procurement advice, configuration, and deployment end-to-end.</p>
+          <ul class="service-list">
+            <li>PC & laptop configuration</li>
+            <li>Windows Server & AD setup</li>
+            <li>NAS & file server</li>
+            <li>Printer & peripheral config</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon ms-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3>IT Training & Consultancy</h3>
+          <p>Staff training on Microsoft 365, cybersecurity awareness, and IT best practices. We also consult on IT strategy and procurement.</p>
+          <ul class="service-list">
+            <li>Microsoft 365 user training</li>
+            <li>Cybersecurity awareness</li>
+            <li>IT strategy consulting</li>
+            <li>Technology procurement advice</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MICROSOFT SECTION ─────────────────────────────────── -->
+  <section id="microsoft" class="section ms-section">
+    <div class="container">
+      <div class="ms-inner">
+        <div class="ms-content reveal">
+          <div class="section-tag">Microsoft Expertise</div>
+          <h2>Your Local <span class="gradient-text">Microsoft Partner</span> in Qatar</h2>
+          <p>We specialize in the full Microsoft ecosystem — from setting up your first M365 account to managing enterprise Azure infrastructure. Our team knows the products inside out so your business gets the most from every license.</p>
+          <div class="ms-products">
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#0078d4">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M11 11H3V3h8v8zm10 0h-8V3h8v8zm-10 10H3v-8h8v8zm10 0h-8v-8h8v8z"/></svg>
+              </div>
+              <span>Microsoft 365</span>
+            </div>
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#0089d6">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+              </div>
+              <span>Azure</span>
+            </div>
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#6264a7">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              </div>
+              <span>Teams</span>
+            </div>
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#038387">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              </div>
+              <span>SharePoint</span>
+            </div>
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#0364b8">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <span>Exchange</span>
+            </div>
+            <div class="ms-product">
+              <div class="ms-product-logo" style="background:#0078d4">
+                <svg viewBox="0 0 24 24" fill="white" width="20"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <span>Entra ID</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Talk to Our Microsoft Team</a>
+        </div>
+        <div class="ms-visual reveal-right">
+          <div class="ms-card-stack">
+            <div class="ms-floating-card card-1">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#0099ff" stroke-width="1.5" width="28"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div>
+                <div class="fc-title">M365 Setup</div>
+                <div class="fc-sub">6 users configured</div>
+              </div>
+            </div>
+            <div class="ms-floating-card card-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00cfff" stroke-width="1.5" width="28"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+              <div>
+                <div class="fc-title">Cloud Backup</div>
+                <div class="fc-sub">Synced · 2 min ago</div>
+              </div>
+            </div>
+            <div class="ms-floating-card card-3">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#00ff88" stroke-width="1.5" width="28"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <div>
+                <div class="fc-title">MFA Enabled</div>
+                <div class="fc-sub">All accounts secured</div>
+              </div>
+            </div>
+            <div class="ms-center-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── WHY US ─────────────────────────────────────────────── -->
+  <section id="why-us" class="section why-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Why QpeqIT</div>
+        <h2>The IT Partner <span class="gradient-text">Built for Qatar</span></h2>
+        <p>We understand the local market, speak Arabic and English, and work Sunday to Thursday — just like your business.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Qatar-Based Team</h3>
+          <p>We're here in Doha. On-site visits, same-day response for critical issues, and engineers who understand Qatar's business landscape.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>Security First</h3>
+          <p>Cybersecurity isn't an add-on — it's built into everything we do. From firewall rules to Qatar PDPL compliance, we keep you protected.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>Fast, Proactive Support</h3>
+          <p>We monitor your systems 24/7 and fix issues before you even notice them. When you do need us, we respond — not tomorrow, now.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Transparent Pricing</h3>
+          <p>Fixed monthly fees, no surprise bills. You know exactly what you're paying and what you get. QAR-denominated pricing, no currency risk.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+          </div>
+          <h3>Microsoft Specialists</h3>
+          <p>Deep expertise in the Microsoft stack. We get the most out of every license your business pays for — M365, Azure, Teams, and beyond.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Grows With You</h3>
+          <p>Start with 5 users, scale to 50. Our plans flex with your business. We onboard new staff, add devices, and expand your setup seamlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ───────────────────────────────────────────── -->
+  <section class="section process-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">How It Works</div>
+        <h2>Up and Running in <span class="gradient-text">4 Simple Steps</span></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Free Discovery Call</h3>
+            <p>We visit your office, assess your current setup, and understand your business needs — no commitment required.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Custom Proposal</h3>
+            <p>You receive a clear proposal with services, pricing in QAR, and a timeline. Everything spelled out, nothing hidden.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Setup & Deployment</h3>
+            <p>Our engineers handle everything — hardware, cloud, security, and training — with minimal disruption to your workday.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Ongoing Management</h3>
+            <p>We monitor, maintain, and support your IT on a monthly retainer. You get a partner, not just a vendor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="section-tag">Get In Touch</div>
+          <h2>Ready to Fix Your IT <span class="gradient-text">Once and For All?</span></h2>
+          <p>Send us a message and we'll get back to you within one business day. Or email us directly — we're a real team of engineers, not a call center.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:info@qpecit.com" class="contact-value">info@qpecit.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Doha, Qatar</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Support Hours</div>
+                <div class="contact-value">Sun – Thu · 8:00 AM – 6:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Mohammed Al Rashid" required />
+              </div>
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text" name="company" placeholder="Al Noor Trading LLC" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="you@company.qa" required />
+            </div>
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" name="phone" placeholder="+974 5X XXX XXX" />
+            </div>
+            <div class="form-group">
+              <label>How Many Users?</label>
+              <select name="team_size">
+                <option value="">Select team size</option>
+                <option>1 – 5 users</option>
+                <option>6 – 15 users</option>
+                <option>16 – 30 users</option>
+                <option>30+ users</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="4" placeholder="Tell us about your current IT setup and what you need help with..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p id="formError" style="display:none;color:#e53e3e;font-size:0.85rem;text-align:center;margin-top:8px;">
+              Something went wrong. Please try again or email us at <a href="mailto:info@qpecit.com">info@qpecit.com</a>
+            </p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00c853" stroke-width="2" width="52"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <h3>Message Sent!</h3>
+            <p>We'll be in touch within one business day. You can also reach us directly at <a href="mailto:info@qpecit.com">info@qpecit.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logot_1.png" alt="QpeqIT" class="footer-logo" />
+          <p>Managed IT Solutions for Qatar's growing businesses. Microsoft specialists. Locally based. Always on.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Microsoft 365 & Cloud</a></li>
+            <li><a href="#services">Managed IT Support</a></li>
+            <li><a href="#services">Cybersecurity</a></li>
+            <li><a href="#services">Network Infrastructure</a></li>
+            <li><a href="#services">Backup & DR</a></li>
+            <li><a href="#services">CCTV & Security</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@qpecit.com">info@qpecit.com</a></li>
+            <li>Doha, Qatar</li>
+            <li>Sun–Thu · 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 QpeqIT. All rights reserved. | Managed IT Solutions · Doha, Qatar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/974" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20"><path d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

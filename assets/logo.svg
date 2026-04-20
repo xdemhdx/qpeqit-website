@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <!-- Ring gradient: light cyan top-left → medium blue bottom-right -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#58C9F5"/>
+      <stop offset="55%"  stop-color="#2196E8"/>
+      <stop offset="100%" stop-color="#1570D0"/>
+    </linearGradient>
+
+    <!-- Tail gradient: medium-dark blue to deep blue -->
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1E84D4"/>
+      <stop offset="100%" stop-color="#0D47A8"/>
+    </linearGradient>
+  </defs>
+
+  <!--
+    Q RING
+    Center: (390, 365)  Stroke-center radius: 170  Stroke-width: 50
+    Outer edge: 195   Inner edge: 145
+    Circumference: 2π×170 = 1068.1 px
+    Gap: 42° wide, starting at SVG angle 36° (between 4 and 5 o'clock)
+    Gap length: 42/360 × 1068.1 = 124.6 px
+    Visible arc: 1068.1 − 124.6 = 943.5 px
+    dashoffset = 943.5 − (36/360 × 1068.1) = 943.5 − 106.8 = 836.7
+  -->
+  <circle
+    cx="390" cy="365" r="170"
+    fill="none"
+    stroke="url(#ringGrad)"
+    stroke-width="50"
+    stroke-dasharray="943.5 124.6"
+    stroke-dashoffset="836.7"
+    stroke-linecap="butt"
+  />
+
+  <!--
+    Q TAIL  (parallelogram at ~55° angle)
+    Gap outer edge corners:
+      at 36°: (390+195×cos36°, 365+195×sin36°) = (548, 480)
+      at 78°: (390+195×cos78°, 365+195×sin78°) = (430, 556)
+    Extend 118px at mid-angle 57°  (cos57=0.545, sin57=0.839):
+      dX=64.3  dY=99.0
+      C = (430+64, 556+99) = (494, 655)
+      D = (548+64, 480+99) = (612, 579)
+  -->
+  <polygon
+    points="548,480 430,556 494,655 612,579"
+    fill="url(#tailGrad)"
+  />
+
+  <!-- "peq" inside Q ring -->
+  <text
+    x="390" y="357"
+    font-family="'Nunito','Varela Round','Arial Rounded MT Bold',Arial,sans-serif"
+    font-size="80"
+    font-weight="400"
+    fill="#6B8299"
+    text-anchor="middle"
+    dominant-baseline="central"
+    letter-spacing="1"
+  >peq</text>
+
+  <!-- "IT" to the lower-right -->
+  <text
+    x="626" y="680"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-size="72"
+    font-weight="600"
+    fill="#3BAFF0"
+    text-anchor="start"
+    dominant-baseline="auto"
+  >IT</text>
+</svg>
